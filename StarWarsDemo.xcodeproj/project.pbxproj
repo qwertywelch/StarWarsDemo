@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015A31C029006187008BD7C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A31BF29006187008BD7C1 /* AppDelegate.swift */; };
+		015A31C229006187008BD7C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A31C129006187008BD7C1 /* SceneDelegate.swift */; };
+		015A31C929006189008BD7C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015A31C829006189008BD7C1 /* Assets.xcassets */; };
+		015A31CC29006189008BD7C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015A31CA29006189008BD7C1 /* LaunchScreen.storyboard */; };
+		015A31F029006219008BD7C1 /* FilmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A31EF29006219008BD7C1 /* FilmListViewController.swift */; };
+		015A31F3290062E4008BD7C1 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A31F2290062E4008BD7C1 /* FilmModel.swift */; };
+		015A31F529006387008BD7C1 /* SWAPIRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A31F429006387008BD7C1 /* SWAPIRespository.swift */; };
+		015A31F829006936008BD7C1 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A31F729006936008BD7C1 /* DataRepository.swift */; };
+		015A31FB290077DD008BD7C1 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A31FA290077DD008BD7C1 /* PersonModel.swift */; };
+		015A320129009283008BD7C1 /* FilmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A320029009283008BD7C1 /* FilmDetailViewController.swift */; };
+		015A32042900D855008BD7C1 /* SWAPIFilm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A32032900D855008BD7C1 /* SWAPIFilm.swift */; };
+		015A32062900DC14008BD7C1 /* SWAPIPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A32052900DC14008BD7C1 /* SWAPIPerson.swift */; };
+		015A3208290102C0008BD7C1 /* StarJedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 015A3207290102BA008BD7C1 /* StarJedi.ttf */; };
+		015A320A29011205008BD7C1 /* FilmListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A320929011205008BD7C1 /* FilmListViewCell.swift */; };
+		015A320D29011B06008BD7C1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 015A320C29011B06008BD7C1 /* README.md */; };
+		015A32102901BE5F008BD7C1 /* FilmListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A320F2901BE5F008BD7C1 /* FilmListViewModel.swift */; };
+		015A32122901BE69008BD7C1 /* FilmDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A32112901BE69008BD7C1 /* FilmDetailViewModel.swift */; };
+		015A32142901C090008BD7C1 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A32132901C090008BD7C1 /* ViewModelDelegate.swift */; };
+		015A32162901DDDC008BD7C1 /* SWAPIPagedResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A32152901DDDB008BD7C1 /* SWAPIPagedResults.swift */; };
+		015A321D2901FEA8008BD7C1 /* ITC Franklin Gothic Std Demi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 015A321C2901FEA8008BD7C1 /* ITC Franklin Gothic Std Demi.otf */; };
+		015A321F29020BA1008BD7C1 /* FilmDetailCharactersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A321E29020BA1008BD7C1 /* FilmDetailCharactersViewCell.swift */; };
+		015A3221290237A2008BD7C1 /* FilmDetailCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A3220290237A2008BD7C1 /* FilmDetailCharactersView.swift */; };
+		015A3223290237B9008BD7C1 /* FilmDetailCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A3222290237B9008BD7C1 /* FilmDetailCharactersViewModel.swift */; };
+		015A322729025166008BD7C1 /* UIFont+preferredBoldFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A322629025166008BD7C1 /* UIFont+preferredBoldFont.swift */; };
+		015A3229290252CA008BD7C1 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A3228290252CA008BD7C1 /* DateHelpers.swift */; };
+		015A322B29025657008BD7C1 /* CollectionStatusHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A322A29025657008BD7C1 /* CollectionStatusHeader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		015A31BC29006187008BD7C1 /* StarWarsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		015A31BF29006187008BD7C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		015A31C129006187008BD7C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		015A31C829006189008BD7C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		015A31CB29006189008BD7C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		015A31CD29006189008BD7C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		015A31EF29006219008BD7C1 /* FilmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListViewController.swift; sourceTree = "<group>"; };
+		015A31F2290062E4008BD7C1 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
+		015A31F429006387008BD7C1 /* SWAPIRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIRespository.swift; sourceTree = "<group>"; };
+		015A31F729006936008BD7C1 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		015A31FA290077DD008BD7C1 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		015A320029009283008BD7C1 /* FilmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewController.swift; sourceTree = "<group>"; };
+		015A32032900D855008BD7C1 /* SWAPIFilm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIFilm.swift; sourceTree = "<group>"; };
+		015A32052900DC14008BD7C1 /* SWAPIPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIPerson.swift; sourceTree = "<group>"; };
+		015A3207290102BA008BD7C1 /* StarJedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StarJedi.ttf; sourceTree = "<group>"; };
+		015A320929011205008BD7C1 /* FilmListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListViewCell.swift; sourceTree = "<group>"; };
+		015A320C29011B06008BD7C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		015A320F2901BE5F008BD7C1 /* FilmListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListViewModel.swift; sourceTree = "<group>"; };
+		015A32112901BE69008BD7C1 /* FilmDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewModel.swift; sourceTree = "<group>"; };
+		015A32132901C090008BD7C1 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
+		015A32152901DDDB008BD7C1 /* SWAPIPagedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIPagedResults.swift; sourceTree = "<group>"; };
+		015A321C2901FEA8008BD7C1 /* ITC Franklin Gothic Std Demi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ITC Franklin Gothic Std Demi.otf"; sourceTree = "<group>"; };
+		015A321E29020BA1008BD7C1 /* FilmDetailCharactersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailCharactersViewCell.swift; sourceTree = "<group>"; };
+		015A3220290237A2008BD7C1 /* FilmDetailCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailCharactersView.swift; sourceTree = "<group>"; };
+		015A3222290237B9008BD7C1 /* FilmDetailCharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailCharactersViewModel.swift; sourceTree = "<group>"; };
+		015A322629025166008BD7C1 /* UIFont+preferredBoldFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+preferredBoldFont.swift"; sourceTree = "<group>"; };
+		015A3228290252CA008BD7C1 /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
+		015A322A29025657008BD7C1 /* CollectionStatusHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionStatusHeader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		015A31B929006187008BD7C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		015A31B329006187008BD7C1 = {
+			isa = PBXGroup;
+			children = (
+				015A31BE29006187008BD7C1 /* StarWarsDemo */,
+				015A31BD29006187008BD7C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		015A31BD29006187008BD7C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				015A31BC29006187008BD7C1 /* StarWarsDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		015A31BE29006187008BD7C1 /* StarWarsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				015A320C29011B06008BD7C1 /* README.md */,
+				015A31CD29006189008BD7C1 /* Info.plist */,
+				015A31BF29006187008BD7C1 /* AppDelegate.swift */,
+				015A31C129006187008BD7C1 /* SceneDelegate.swift */,
+				015A31C829006189008BD7C1 /* Assets.xcassets */,
+				015A31CA29006189008BD7C1 /* LaunchScreen.storyboard */,
+				015A31F929006941008BD7C1 /* Data */,
+				015A32192901F927008BD7C1 /* Fonts */,
+				015A320B29011903008BD7C1 /* Presentation */,
+				015A32252902515A008BD7C1 /* Utils */,
+			);
+			path = StarWarsDemo;
+			sourceTree = "<group>";
+		};
+		015A31F12900628B008BD7C1 /* Domain Models */ = {
+			isa = PBXGroup;
+			children = (
+				015A31F2290062E4008BD7C1 /* FilmModel.swift */,
+				015A31FA290077DD008BD7C1 /* PersonModel.swift */,
+			);
+			path = "Domain Models";
+			sourceTree = "<group>";
+		};
+		015A31F929006941008BD7C1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				015A31F729006936008BD7C1 /* DataRepository.swift */,
+				015A32022900D839008BD7C1 /* SWAPI */,
+				015A31F12900628B008BD7C1 /* Domain Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		015A32022900D839008BD7C1 /* SWAPI */ = {
+			isa = PBXGroup;
+			children = (
+				015A31F429006387008BD7C1 /* SWAPIRespository.swift */,
+				015A32152901DDDB008BD7C1 /* SWAPIPagedResults.swift */,
+				015A32032900D855008BD7C1 /* SWAPIFilm.swift */,
+				015A32052900DC14008BD7C1 /* SWAPIPerson.swift */,
+			);
+			path = SWAPI;
+			sourceTree = "<group>";
+		};
+		015A320B29011903008BD7C1 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				015A32182901E4D2008BD7C1 /* FilmDetailView */,
+				015A32172901E4BF008BD7C1 /* FilmListView */,
+				015A32132901C090008BD7C1 /* ViewModelDelegate.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		015A32172901E4BF008BD7C1 /* FilmListView */ = {
+			isa = PBXGroup;
+			children = (
+				015A31EF29006219008BD7C1 /* FilmListViewController.swift */,
+				015A320929011205008BD7C1 /* FilmListViewCell.swift */,
+				015A320F2901BE5F008BD7C1 /* FilmListViewModel.swift */,
+			);
+			path = FilmListView;
+			sourceTree = "<group>";
+		};
+		015A32182901E4D2008BD7C1 /* FilmDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				015A320029009283008BD7C1 /* FilmDetailViewController.swift */,
+				015A32112901BE69008BD7C1 /* FilmDetailViewModel.swift */,
+				015A3224290237C2008BD7C1 /* FilmDetailCharacters */,
+			);
+			path = FilmDetailView;
+			sourceTree = "<group>";
+		};
+		015A32192901F927008BD7C1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				015A321C2901FEA8008BD7C1 /* ITC Franklin Gothic Std Demi.otf */,
+				015A3207290102BA008BD7C1 /* StarJedi.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		015A3224290237C2008BD7C1 /* FilmDetailCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				015A3220290237A2008BD7C1 /* FilmDetailCharactersView.swift */,
+				015A321E29020BA1008BD7C1 /* FilmDetailCharactersViewCell.swift */,
+				015A3222290237B9008BD7C1 /* FilmDetailCharactersViewModel.swift */,
+				015A322A29025657008BD7C1 /* CollectionStatusHeader.swift */,
+			);
+			path = FilmDetailCharacters;
+			sourceTree = "<group>";
+		};
+		015A32252902515A008BD7C1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				015A322629025166008BD7C1 /* UIFont+preferredBoldFont.swift */,
+				015A3228290252CA008BD7C1 /* DateHelpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		015A31BB29006187008BD7C1 /* StarWarsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 015A31E629006189008BD7C1 /* Build configuration list for PBXNativeTarget "StarWarsDemo" */;
+			buildPhases = (
+				015A31B829006187008BD7C1 /* Sources */,
+				015A31B929006187008BD7C1 /* Frameworks */,
+				015A31BA29006187008BD7C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarWarsDemo;
+			productName = StarWarsDemo;
+			productReference = 015A31BC29006187008BD7C1 /* StarWarsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		015A31B429006187008BD7C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					015A31BB29006187008BD7C1 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 015A31B729006187008BD7C1 /* Build configuration list for PBXProject "StarWarsDemo" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 015A31B329006187008BD7C1;
+			productRefGroup = 015A31BD29006187008BD7C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				015A31BB29006187008BD7C1 /* StarWarsDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		015A31BA29006187008BD7C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015A321D2901FEA8008BD7C1 /* ITC Franklin Gothic Std Demi.otf in Resources */,
+				015A31CC29006189008BD7C1 /* LaunchScreen.storyboard in Resources */,
+				015A3208290102C0008BD7C1 /* StarJedi.ttf in Resources */,
+				015A320D29011B06008BD7C1 /* README.md in Resources */,
+				015A31C929006189008BD7C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		015A31B829006187008BD7C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015A321F29020BA1008BD7C1 /* FilmDetailCharactersViewCell.swift in Sources */,
+				015A322729025166008BD7C1 /* UIFont+preferredBoldFont.swift in Sources */,
+				015A32042900D855008BD7C1 /* SWAPIFilm.swift in Sources */,
+				015A322B29025657008BD7C1 /* CollectionStatusHeader.swift in Sources */,
+				015A31F829006936008BD7C1 /* DataRepository.swift in Sources */,
+				015A31FB290077DD008BD7C1 /* PersonModel.swift in Sources */,
+				015A3221290237A2008BD7C1 /* FilmDetailCharactersView.swift in Sources */,
+				015A32062900DC14008BD7C1 /* SWAPIPerson.swift in Sources */,
+				015A31C029006187008BD7C1 /* AppDelegate.swift in Sources */,
+				015A32122901BE69008BD7C1 /* FilmDetailViewModel.swift in Sources */,
+				015A31F529006387008BD7C1 /* SWAPIRespository.swift in Sources */,
+				015A3223290237B9008BD7C1 /* FilmDetailCharactersViewModel.swift in Sources */,
+				015A32102901BE5F008BD7C1 /* FilmListViewModel.swift in Sources */,
+				015A32142901C090008BD7C1 /* ViewModelDelegate.swift in Sources */,
+				015A3229290252CA008BD7C1 /* DateHelpers.swift in Sources */,
+				015A32162901DDDC008BD7C1 /* SWAPIPagedResults.swift in Sources */,
+				015A320A29011205008BD7C1 /* FilmListViewCell.swift in Sources */,
+				015A320129009283008BD7C1 /* FilmDetailViewController.swift in Sources */,
+				015A31F3290062E4008BD7C1 /* FilmModel.swift in Sources */,
+				015A31C229006187008BD7C1 /* SceneDelegate.swift in Sources */,
+				015A31F029006219008BD7C1 /* FilmListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		015A31CA29006189008BD7C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				015A31CB29006189008BD7C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		015A31E429006189008BD7C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		015A31E529006189008BD7C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		015A31E729006189008BD7C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 7JHJ9L2JV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Star Wars Demo";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qwertywelch.StarWarsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		015A31E829006189008BD7C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 7JHJ9L2JV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StarWarsDemo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Star Wars Demo";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qwertywelch.StarWarsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		015A31B729006187008BD7C1 /* Build configuration list for PBXProject "StarWarsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A31E429006189008BD7C1 /* Debug */,
+				015A31E529006189008BD7C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		015A31E629006189008BD7C1 /* Build configuration list for PBXNativeTarget "StarWarsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A31E729006189008BD7C1 /* Debug */,
+				015A31E829006189008BD7C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 015A31B429006187008BD7C1 /* Project object */;
+}
