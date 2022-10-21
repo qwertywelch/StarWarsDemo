@@ -21,7 +21,6 @@
 		015A32062900DC14008BD7C1 /* SWAPIPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A32052900DC14008BD7C1 /* SWAPIPerson.swift */; };
 		015A3208290102C0008BD7C1 /* StarJedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 015A3207290102BA008BD7C1 /* StarJedi.ttf */; };
 		015A320A29011205008BD7C1 /* FilmListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A320929011205008BD7C1 /* FilmListViewCell.swift */; };
-		015A320D29011B06008BD7C1 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 015A320C29011B06008BD7C1 /* README.md */; };
 		015A32102901BE5F008BD7C1 /* FilmListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A320F2901BE5F008BD7C1 /* FilmListViewModel.swift */; };
 		015A32122901BE69008BD7C1 /* FilmDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A32112901BE69008BD7C1 /* FilmDetailViewModel.swift */; };
 		015A32142901C090008BD7C1 /* ViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015A32132901C090008BD7C1 /* ViewModelDelegate.swift */; };
@@ -52,7 +51,6 @@
 		015A32052900DC14008BD7C1 /* SWAPIPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIPerson.swift; sourceTree = "<group>"; };
 		015A3207290102BA008BD7C1 /* StarJedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = StarJedi.ttf; sourceTree = "<group>"; };
 		015A320929011205008BD7C1 /* FilmListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListViewCell.swift; sourceTree = "<group>"; };
-		015A320C29011B06008BD7C1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		015A320F2901BE5F008BD7C1 /* FilmListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListViewModel.swift; sourceTree = "<group>"; };
 		015A32112901BE69008BD7C1 /* FilmDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewModel.swift; sourceTree = "<group>"; };
 		015A32132901C090008BD7C1 /* ViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelDelegate.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 		015A31BE29006187008BD7C1 /* StarWarsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				015A320C29011B06008BD7C1 /* README.md */,
 				015A31CD29006189008BD7C1 /* Info.plist */,
 				015A31BF29006187008BD7C1 /* AppDelegate.swift */,
 				015A31C129006187008BD7C1 /* SceneDelegate.swift */,
@@ -260,7 +257,6 @@
 				015A321D2901FEA8008BD7C1 /* ITC Franklin Gothic Std Demi.otf in Resources */,
 				015A31CC29006189008BD7C1 /* LaunchScreen.storyboard in Resources */,
 				015A3208290102C0008BD7C1 /* StarJedi.ttf in Resources */,
-				015A320D29011B06008BD7C1 /* README.md in Resources */,
 				015A31C929006189008BD7C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
