@@ -15,6 +15,8 @@ struct SWAPIFilm {
 	let opening_crawl: String
 	let release_date: String
 	let characters: [URL]
+	
+	// leaving out fields not used by app
 }
 
 // For transforming the API object into our standard resource.
