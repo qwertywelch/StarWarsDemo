@@ -3,7 +3,9 @@
 Develop an iOS application using the Star Wars API that lists out all of the Star Wars movies.
 
 ✅ The movies should be listed in canonical order with the following data in each cell: title, release date, episode number.
+
 ✅ Tapping on a movie cell will navigate the user into a detail view showing the following additional information: title, episode number, release date, characters, and opening crawl text.
+
 ✅ The application must be written in Swift, with a target of iOS 14, use UIKit, and use no third-party libraries.
 
 ## Architecture
@@ -46,7 +48,6 @@ The layout has been done programatically, without storyboards (except for the La
 #### FilmDetailViewController
 * A UIViewController with a UIStackView embedded in a UIScrollView with details about a film.
 * It is backed by the FilmDetailViewModel.
-* To match the films, the "opening crawl text" is displayed in the "Franklin Gotchic - Demi" font, justified aligned, and yellow.
 * A collection view, FilmDetailCharactersView loads and displays characters associated with the film.
 * The FilmDetailCharactersView is expanded to a size to fit all of its content, so it scrolls with the rest of the view.
 
@@ -65,6 +66,7 @@ To fit a Star Wars aesthetic, I applied the following tweaks:
 * Accent color set to yellow.
 * Navigation bar title font set to custom font "StarJedi". 
 * Space image set as navigation bar's background (when not transparent).
+* The "opening crawl text" is displayed in the "Franklin Gotchic - Demi" font, justified aligned, and yellow, just like in the films.
 
 The app's icon features Jar Jar Binks who appeared in the Star Wars prequel trilogy, and my last name Welch.
 
