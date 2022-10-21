@@ -38,7 +38,10 @@ class FilmDetailCharactersView: UICollectionView {
 	}
 	
 	func populate() {
-		viewModel.loadCharacters()
+		// only fetch if none have been loaded
+		if viewModel.numberOfCharacters == 0 {
+			viewModel.loadCharacters()
+		}
 	}
 }
 

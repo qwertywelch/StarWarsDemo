@@ -47,7 +47,11 @@ class FilmListViewController: UITableViewController {
 	
 	// have our view model start loading what it needs before the view goes onscreen
 	override func viewWillAppear(_ animated: Bool) {
-		viewModel.load()
+		// only load data if there aren't any films, since viewWillAppear may get called
+		// when a detail view is popped
+		if viewModel.numberOfFilms == 0 {
+			viewModel.load()
+		}
 	}
 	
 	// when this view goes offscreen, make sure the row is deselected
