@@ -32,14 +32,17 @@ class FilmListViewController: UITableViewController {
 	
 	override func viewDidLoad() {
 		navigationItem.title = "Star Wars Movies"
+		navigationItem.rightBarButtonItem = sortButton
+		
+		// some of the movie titles will hide the back button text anyways, so let's make it consistent
+		// for the detail views
+		navigationItem.backButtonDisplayMode = .minimal
 		
 		refreshControl = UIRefreshControl()
 		refreshControl!.addTarget(viewModel, action: #selector(viewModel.load), for: .valueChanged)
 		refreshControl?.beginRefreshing()
 
 		tableView.register(FilmListViewCell.self, forCellReuseIdentifier: "filmCell")
-		
-		navigationItem.rightBarButtonItem = sortButton
 	}
 	
 	// have our view model start loading what it needs before the view goes onscreen

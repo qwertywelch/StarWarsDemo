@@ -123,9 +123,6 @@ class FilmDetailViewController: UIViewController {
 
 	override func viewDidLoad() {
 		navigationItem.title = viewModel.navTitle
-		
-		// some of the movie titles hide the back button text anyways, so let's make it consistent
-		navigationItem.backButtonDisplayMode = .minimal
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
