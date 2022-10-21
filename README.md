@@ -1,7 +1,8 @@
 # Star Wars Demo by Nicholas Welch
-![App icon](StarWarsDemo/Assetes.xcassets/AppIcon.appiconset/AppIcon.png)
-![Screenshot of movie ilst](Screenshots/FilmListViewController.png)
-![Screenshot of movie detail](Screenshots/FilmDetailViewController.png)
+
+| Icon | List | Detail |
+|------|------|--------|
+|<img src="StarWarsDemo/Assets.xcassets/AppIcon.appiconset/AppIcon.png" width="128" />|<img src="Screenshots/FilmListViewController.png" width="150" /> |<img src="Screenshots/FilmDetailViewController.png" width="150" />|
 
 ### Challenge Specifications
 Develop an iOS application using the Star Wars API that lists out all of the Star Wars movies.
