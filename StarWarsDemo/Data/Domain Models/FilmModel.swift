@@ -8,7 +8,6 @@
 import Foundation
 
 /// A single Star Wars film.
-/// See https://swapi.dev/documentation#films.
 struct FilmModel: DomainModel {
 	let title: String
 	let episodeNum: Int
