@@ -21,7 +21,7 @@ A DataRepository protocol was written that provides methods for retrieving films
 
 **SWAPIRepository**
 
-SWAPIRepository conforms to the DataRepository protocol and handles interaction with the [Star Wars API](https://swapi.dev). HTTP requests are done with URLSession's async `data(for:)` method. It uses data transfer objects (SWAPIFilm, SWAPIPerson, SWPagedResults) to decode the responses. The DTOs from the API conform to SWAPIResponseDTO, with method toDomainModel that returns DomainModel instances that we will utilize in our application.
+SWAPIRepository conforms to the DataRepository protocol and handles interaction with the Star Wars API. Works with both https://swapi.dev and https://swapi.py4e.com, using the latter as it responds much faster than the former. HTTP requests are done with URLSession's async `data(for:)` method. It uses data transfer objects (SWAPIFilm, SWAPIPerson, SWPagedResults) to decode the responses. The DTOs from the API conform to SWAPIResponseDTO, with method toDomainModel that returns DomainModel instances that we will utilize in our application.
 
 If the API's response structures were to change, we would only need to modify the DTO struct definition and its toDomainModel transform method which are contained in one file per DTO. No other part of the app "knows" about the SWAPI, just how to get models from a DataRepository.
 
