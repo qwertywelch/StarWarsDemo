@@ -11,7 +11,7 @@ import Foundation
 class SWAPIRepository {
 	static let shared = SWAPIRepository()
 	
-	private let apiRoot = "https://swapi.dev/api/" // unresponsive? try this one: https://swapi.py4e.com/api/
+	private let apiRoot = "https://swapi.py4e.com/api/" // identical but with less lag than https://swapi.dev/api/
 	private let decoder = JSONDecoder()
 	
 	// create custom URLSession so I can override the timeout
@@ -21,7 +21,7 @@ class SWAPIRepository {
 		return URLSession(configuration: config)
 	}()
 	
-	// Make a request to the Star Wars API. Provide the endpoint, type of data expected, and optionally some query string parameters.
+	/// Make a request to the Star Wars API. Provide the endpoint, type of data expected, and optionally some query string parameters.
 	func request<SWResource: SWAPIResponseDTO>(to endpoint: String, dataType: SWResource.Type, queryParams: [String: LosslessStringConvertible] = [:]) async -> DataSourceResult<SWResource.Resource> {
 		var urlString = "\(apiRoot)\(endpoint)/"
 		
